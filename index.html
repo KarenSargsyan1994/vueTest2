@@ -12,16 +12,31 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="smaple">
+    <div class="sample">
         <input type="text">
         <hr>
-        <h1>HELLO</h1>
+        <h1>HELLO {{name}}</h1>
+    </div>
+    <div class="sample">
+        <input type="text">
+        <hr>
+        <h1>HELLO {{name}}</h1>
+    </div>
+    <div class="sample">
+        <input type="text">
+        <hr>
+        <h1>HELLO {{name}}</h1>
     </div>
 </div>
 
 
 <script>
-
+    new Vue({
+        el: '.sample',
+        data:{
+            name:'karen'
+        }
+    })
 
 </script>
 </body>
